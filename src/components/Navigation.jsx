@@ -2,8 +2,11 @@ import { useState } from 'react';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Resume from './Resume';
 
 function Navigation() {
+
+
   const [currentPage, handlePageChange] = useState('About');
 
   const renderPage = () => {
@@ -12,6 +15,8 @@ function Navigation() {
         return <Portfolio />;
       case 'Contact':
         return <Contact />;
+      case 'Resume':
+        return <Resume />;
       default:
         return <About />;
     }
@@ -19,7 +24,8 @@ function Navigation() {
 
   return (
     <div>
-      <ul className='nav nav-tabs'>
+      <h1 className='nav-title'> Emily Knight </h1>
+      <ul>
         <li className='nav-item'>
           <a
             href='#about'
@@ -45,6 +51,15 @@ function Navigation() {
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
           >
             Contact
+          </a>
+        </li>
+        <li className='nav-item'>
+          <a
+            href='#resume'
+            onClick={() => handlePageChange('Resume')}
+            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          >
+            Resume
           </a>
         </li>
       </ul>
