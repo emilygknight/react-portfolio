@@ -3,27 +3,27 @@
 function Portfolio() {
     const portfolios = [
       {
-        image: 'path/to/image1.png',
-        title: 'Project 1',
-        deployedLink: 'https://example.com/project1',
-        githubLink: 'https://github.com/emilygknight/project1'
+        image: '../src/assets/images/dnd-builder.png',
+        title: 'DND Builder',
+        deployedLink: 'https://dnd-builder-8e53886511db.herokuapp.com/',
+        githubLink: 'https://github.com/InternetEthan/dnd-builder'
       },
       {
-        image: 'path/to/image2.png',
-        title: 'Project 2',
-        deployedLink: 'https://example.com/project2',
-        githubLink: 'https://github.com/emilygknight/project2'
+        image: '../src/assets/images/bar-crawler.png',
+        title: 'Bar Crawler',
+        deployedLink: 'https://github.com/acantu9/team-5-project',
+        githubLink: 'https://acantu9.github.io/team-5-project/'
       },
-        {
-            image: 'path/to/image3.png',
-            title: 'Project 3',
-            deployedLink: 'https://example.com/project3',
-            githubLink: 'https://github.com/emilygknight/react-portfolio'
-        },
+     {
+        image: '../src/assets/images/Note-Taker-App.png',
+        title: 'Note Taker',
+        deployedLink: 'https://aqueous-gorge-13031-d60f9d5e4501.herokuapp.com/',
+        githubLink: 'https://github.com/emilygknight/note-taker'
+    },
 ];
   
     return (
-      <div>
+      <div className="portfolio-page">
         {portfolios.map((portfolio, index) => (
           <div key={index}>
             <img src={portfolio.image} alt={portfolio.title} />
