@@ -39,10 +39,12 @@ ul {
 }
 
 .aboutme-page img {
-  border-radius: 30%;
-  width: 30%;
-  height: 30%;
+  border-radius: 50%;
+  border: black solid 2px;
+  width: 50%;
+  height: 43%;
   margin: 2%;;
+  position: relative;
 }
 
 .aboutme-page {
@@ -51,6 +53,7 @@ ul {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  color: black;
 }
 
 .portfolio-page {
@@ -103,4 +106,9 @@ textarea {
 .form button {
   border: 2px solid white;
   border-radius: 20px;
+}
+
+.resume-page img{
+  background-color: rgb(177, 175, 165);
+  width: 50%;
 }
