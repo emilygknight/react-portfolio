@@ -2,12 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+  /* font-family: 'Kalnia' , 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap'); */
 }
 
 body {
-  background-color: rgb(35, 59, 138);
+  background-color: rgb(128, 123, 108);
+  font-family: 'Kalnia' , sans-serif;
 }
 
 header {
@@ -28,6 +30,7 @@ ul {
 .nav-title {
   margin-right: 1rem;
   font-size: 1.5rem;
+  color: black;
 }
 
 .nav-link {
@@ -43,7 +46,7 @@ ul {
 }
 
 .aboutme-page {
-  background-color: rgb(35, 59, 138);
+  background-color: rgb(199, 195, 180);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,15 +54,53 @@ ul {
 }
 
 .portfolio-page {
-  background-color: rgb(35, 59, 138);
+  background-color: rgb(177, 175, 165);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  color: black;
 }
 
 .portfolio-page img {
-  width: 80%;
-  height: 80%;
-  margin: 2%;;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 90px;
+  width: 40%;
+  height: 40%;
+  margin-top: 5%;;
+}
+
+.portfolio-page img:hover {
+  width: 60%;
+}
+
+.form {
+  background-color: rgb(128, 123, 108);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  text-align: center;
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+input ,
+textarea {
+  border: 2px solid rgb(235, 229, 229);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(235, 229, 229);
+  color: black;
+}
+
+.form button {
+  border: 2px solid white;
+  border-radius: 20px;
 }

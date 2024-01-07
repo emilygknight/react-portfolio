@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// import './App.css';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -43,15 +44,36 @@ const Contact = () => {
 
   return (
     <div>
-      <h1>Contact</h1>
+      <h1 className='contact-title'>Contact Me</h1>
       {isSent && <p>Email sent successfully!</p>}
       {error && <p>{error}</p>}
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={name} onChange={handleNameChange} placeholder="Name" required />
-        <input type="email" value={email} onChange={handleEmailChange} placeholder="Email" required />
-        <input type="text" value={subject} onChange={handleSubjectChange} placeholder="Subject" required />
-        <textarea value={message} onChange={handleMessageChange} placeholder="Message" required />
-        <button type="submit">Send Email</button>
+      <form  className="form" onSubmit={handleSubmit}>
+        <input 
+        type="text" 
+        value={name} 
+        onChange={handleNameChange} 
+        placeholder="Name" 
+        required />
+        <input 
+        type="email" 
+        value={email} 
+        onChange={handleEmailChange} 
+        placeholder="Email" 
+        required />
+        <input 
+        type="text" 
+        value={subject} 
+        onChange={handleSubjectChange} 
+        placeholder="Subject" 
+        required />
+        <textarea 
+        value={message} 
+        onChange={handleMessageChange} 
+        placeholder="Message" 
+        required />
+        <button type="submit">
+            Send Email
+            </button>
       </form>
     </div>
   );

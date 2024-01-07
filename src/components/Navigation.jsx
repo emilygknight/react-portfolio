@@ -24,8 +24,8 @@ function Navigation() {
 
   return (
     <div>
-      <h1 className='nav-title'> Emily Knight </h1>
       <ul>
+      <h1 className='nav-title'> Emily Knight </h1>
         <li className='nav-item'>
           <a
             href='#about'
