@@ -25,11 +25,15 @@ const Contact = () => {
     setMessage(e.target.value);
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Perform form validation here
-
+    if (!name || !email || !subject || !message) {
+        setError('Please fill in all fields.');
+        return;
+      }
     // Make API request to send email
     fetch('/api/send-email', { name, email, subject, message })
       .then(() => {

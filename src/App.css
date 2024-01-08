@@ -2,14 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: 'Kalnia' , 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap'); */
 }
 
 body {
   background-color: rgb(128, 123, 108);
-  font-family: 'Kalnia' , sans-serif;
+  font-family: "Quicksand" , sans-serif;
 }
 
 header {
@@ -23,7 +20,8 @@ ul {
 }
 
 .nav {
-  color: rgb(33, 16, 16);
+  background-color: rgb(195, 194, 192);
+  padding: 10px;
 }
 
 .nav-title {
@@ -34,17 +32,23 @@ ul {
 }
 
 .nav-link {
-  color: white;
-  text-shadow: 2px 2px 2px black;
+  color: rgb(1, 1, 1);
+  /* text-shadow: 2px 2px 2px black; */
+}
+
+.nav-link.active {
+  color: #426352; /* Example color */
+  font-size: 20px; /* Example style */
 }
 
 .aboutme-page img {
   border-radius: 50%;
-  border: black solid 2px;
-  width: 500px;
-  height: 50%;
-  margin: 2%;
+  width: 200px;
+  height: 200px;
+  margin: 5%;
+  transition: transform 0.3s ease;
 }
+
 
 .aboutme-page {
   display: flex;
@@ -54,25 +58,37 @@ ul {
   color: black;
 }
 
+.aboutme-page:hover img {
+  transform: scale(1.2);
+}
+
 .portfolio-page {
-  background-color: rgb(177, 175, 165);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: black;
+  height: 150vh;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
 .portfolio-page img {
-  box-shadow: 2px 2px 2px black;
-  border-radius: 90px;
-  width: 40%;
-  height: 40%;
-  margin-top: 5%;;
+  /* box-shadow: 2px 2px 2px black; */
+  /* border-radius: 50px; */
+  width: 30%;
+  height: 30%;
+  margin-top: 5%;
 }
 
 .portfolio-page img:hover {
-  width: 60%;
+  width: 40%;
+}
+
+.deployed-link {
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+
+.github-link {
+  color: black;
+  text-shadow: 1px 1px 1px white;
 }
 
 .form {
@@ -85,6 +101,7 @@ ul {
 .contact-title {
   text-align: center;
   color: black;
+  margin: 5%;
 }
 
 p {
@@ -104,23 +121,32 @@ textarea {
 .form button {
   border: 2px solid white;
   border-radius: 20px;
+  margin-top: 5%;
+}
+
+.resume-page {
+  height: 150vh;
+  margin-top: 1%;
+  color: black;
+  font-size: 1.5rem;
 }
 
 .resume-page img{
   background-color: rgb(177, 175, 165);
-  width: 50%;
+  padding: 5%;
+  /* width: 50%; */
 }
-/* 
+
 .footer {
   display: flex;
   position: fixed;
   bottom: .5%;
   flex-direction: row;
   align-items: center;
-} */
+} 
 
 
-/* .footer-item {
+.footer-item {
   margin: 20%;
   justify-content: center;
 }
@@ -128,7 +154,7 @@ textarea {
 .footer-link {
   color: black;
   text-shadow: 2px 2px 2px white;
-} */
+}
 
 .footer {
   display: flex;
@@ -147,7 +173,7 @@ textarea {
 
 .footer-link {
   color: black;
-  text-shadow: 2px 2px 2px white;
+  text-shadow: 2px 2px 2px rgb(173, 129, 35);
 }
 
 @media (max-width: 480px) {
@@ -160,7 +186,8 @@ textarea {
   }
 
   ul {
-    flex-direction: column; /* Stack the navigation links vertically on smaller screens */
+    flex-direction: column;
+    align-items: center; /* Stack the navigation links vertically on smaller screens */
   }
 
   .nav-title {
@@ -169,7 +196,7 @@ textarea {
   }
 
   .aboutme-page img {
-    width: 100%; /* Make the image fill the width of the container on smaller screens */
+    width: 50%; /* Make the image fill the width of the container on smaller screens */
     height: auto; /* Maintain the aspect ratio of the image */
   }
 

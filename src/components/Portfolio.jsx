@@ -26,10 +26,12 @@ function Portfolio() {
       <div className="portfolio-page">
         {portfolios.map((portfolio, index) => (
           <div key={index}>
+            <a href={portfolio.deployedLink}>
             <img src={portfolio.image} alt={portfolio.title} />
+            </a>
             <h3>{portfolio.title}</h3>
-            <p>Deployed Application: <a href={portfolio.deployedLink}>{portfolio.deployedLink}</a></p>
-            <p>GitHub Repository: <a href={portfolio.githubLink}>{portfolio.githubLink}</a></p>
+            <p>Deployed Application: <a className="deployed-link" href={portfolio.deployedLink}>{portfolio.deployedLink}</a></p>
+            <p>GitHub Repository: <a className="github-link" href={portfolio.githubLink}>{portfolio.githubLink}</a></p>
           </div>
         ))}
       </div>
