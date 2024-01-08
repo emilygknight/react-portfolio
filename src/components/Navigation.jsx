@@ -63,6 +63,11 @@ function Navigation() {
           </a>
         </li>
       </ul>
+      <div className="footer">
+        <div className="footer-item"> <a href="https://linkedin.com/in/emily-knight-webdev" className="footer-link">LinkedIn</a> </div>
+        <div className="footer-item"> <a href="https://github.com/emilygknight" className="footer-link">GitHub</a> </div>
+        <div className="footer-item"> <a href="https://emilyknight819@gmail.com" className="footer-link">Email</a> </div>
+    </div>
       <div>{renderPage(currentPage)}</div>
     </div>
   );  

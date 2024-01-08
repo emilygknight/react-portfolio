@@ -13,7 +13,6 @@ body {
 }
 
 header {
-  background-color: gray;
   flex-direction: column;
 }
 
@@ -31,6 +30,7 @@ ul {
   margin-right: 1rem;
   font-size: 1.5rem;
   color: black;
+  font-size: 50px;
 }
 
 .nav-link {
@@ -41,14 +41,12 @@ ul {
 .aboutme-page img {
   border-radius: 50%;
   border: black solid 2px;
-  width: 50%;
-  height: 43%;
-  margin: 2%;;
-  position: relative;
+  width: 500px;
+  height: 50%;
+  margin: 2%;
 }
 
 .aboutme-page {
-  background-color: rgb(199, 195, 180);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,4 +109,84 @@ textarea {
 .resume-page img{
   background-color: rgb(177, 175, 165);
   width: 50%;
+}
+/* 
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: .5%;
+  flex-direction: row;
+  align-items: center;
+} */
+
+
+/* .footer-item {
+  margin: 20%;
+  justify-content: center;
+}
+
+.footer-link {
+  color: black;
+  text-shadow: 2px 2px 2px white;
+} */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.footer-item {
+  margin: 10px;
+}
+
+.footer-link {
+  color: black;
+  text-shadow: 2px 2px 2px white;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Adjust font size for better readability on smaller screens */
+  }
+
+  header {
+    flex-direction: column-reverse; /* Adjust the layout of the header for better stacking on smaller screens */
+  }
+
+  ul {
+    flex-direction: column; /* Stack the navigation links vertically on smaller screens */
+  }
+
+  .nav-title {
+    margin-right: 0; /* Remove the margin on smaller screens to save space */
+    margin-bottom: 1rem; /* Add some spacing between the title and the navigation links */
+  }
+
+  .aboutme-page img {
+    width: 100%; /* Make the image fill the width of the container on smaller screens */
+    height: auto; /* Maintain the aspect ratio of the image */
+  }
+
+  .portfolio-page img {
+    width: 80%; /* Adjust the width of the image for better visibility on smaller screens */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-top: 2%; /* Increase the top margin for better spacing */
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%; /* Make the input fields and text area fill the width of the container on smaller screens */
+  }
+
+  .footer {
+    flex-direction: column; /* Stack the footer items vertically on smaller screens */
+    align-items: center; /* Center the footer items horizontally on smaller screens */
+    padding: 10px; /* Reduce the padding for better spacing on smaller screens */
+  }
 }
