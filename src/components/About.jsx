@@ -1,10 +1,10 @@
 // import { useState } from 'react';
-
+import mainImage from '../assets/images/0F1A9020.jpg';
 
 const aboutMe = {
   name: "Emily Knight",
   description: "Web Developer",
-  image: "../src/assets/images/0F1A9020.jpg"
+  image: mainImage
 }
 
 function About() {
