@@ -10,7 +10,7 @@ const aboutMe = {
 function About() {
   console.log("hello");
   return <div className="aboutme-page">
-    <img src={aboutMe.image} alt={aboutMe.name} />
+    <img src={mainImage} alt={aboutMe.name} />
     <h2>{aboutMe.name}</h2>
     <p>{aboutMe.description}</p>
   </div>
