@@ -3,19 +3,19 @@
 function Portfolio() {
     const portfolios = [
       {
-        image: '../src/assets/images/dnd-builder.png',
+        image: './images/dnd-builder.png',
         title: 'DND Builder',
         deployedLink: 'https://dnd-builder-8e53886511db.herokuapp.com/',
         githubLink: 'https://github.com/InternetEthan/dnd-builder'
       },
       {
-        image: '../src/assets/images/bar-crawler.png',
+        image: './images/bar-crawler.png',
         title: 'Bar Crawler',
         deployedLink: 'https://github.com/acantu9/team-5-project',
         githubLink: 'https://acantu9.github.io/team-5-project/'
       },
      {
-        image: '../src/assets/images/Note-Taker-App.png',
+        image: './images/Note-Taker-App.png',
         title: 'Note Taker',
         deployedLink: 'https://aqueous-gorge-13031-d60f9d5e4501.herokuapp.com/',
         githubLink: 'https://github.com/emilygknight/note-taker'

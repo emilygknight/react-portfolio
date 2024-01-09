@@ -4,7 +4,7 @@
 const aboutMe = {
   name: "Emily Knight",
   description: "Web Developer",
-  image: './0F1A9020.jpg'
+  image: './images/0F1A9020.jpg'
 }
 
 function About() {
