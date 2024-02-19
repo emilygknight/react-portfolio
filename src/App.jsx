@@ -1,12 +1,12 @@
 import './App.css';
 import './fonts.css';
-import Header from './components/Header';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <div className='header'>
-      <Header /> 
-    </div>
+    <body>
+      <Navigation />
+    </body>
   );
 }
 

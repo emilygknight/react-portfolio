@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className='contact-conatiner'>
       <h1 className='contact-title'>Contact Me</h1>
       {isSent && <p>Email sent successfully!</p>}
       {error && <p>{error}</p>}
