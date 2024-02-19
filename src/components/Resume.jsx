@@ -12,11 +12,11 @@ function Resume() {
   
     // let [about, setAbout] = useState();
   
-    return <div className='resume-page'> Resume
-        <p><a href="./pdf/Resume.pdf" download>Download Resume</a></p>
-        <img src={myResume.image} alt={myResume.name} />
-
-    </div>
+    return <div className='resume-page'>         
+              <h2>Resume</h2>
+              <p><a href="./pdf/Resume.pdf" download>Download Resume</a></p>
+              <img src={myResume.image} alt={myResume.name} />
+          </div>
   }
   
   export default Resume;

@@ -1,6 +1,6 @@
 :root {
   --blue: #d8c7ac;
-  --navy: #b1af9a;
+  --navy: #b4ae9d;
   --aqua: #c9dee6;
 }
 
@@ -46,6 +46,7 @@ body {
   justify-content: space-between;
 }
 
+
 .left-nav-link {
   color: #1a1818;
   text-align: center;
@@ -58,6 +59,11 @@ body {
   text-decoration: none;
   transition: opacity .3s;
   display: block;
+}
+
+.left-nav-link:hover {
+  opacity: 0.5;
+  color: #1c1e23;
 }
 
 .left-nav-item {
@@ -179,18 +185,32 @@ body {
 .portfolio-page {
   color: black;
   height: 150vh;
-  margin-left: 5%;
+  margin-left: 15%;
   margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  border-bottom: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .portfolio-page img {
-  width: 30%;
-  height: 30%;
+  width: 400px;
   margin-top: 5%;
+  border-radius: 5%;
+}
+
+.portfolio-page p {
+  margin: 5%;
+  font-size: .8rem;
 }
 
 .portfolio-page img:hover {
-  width: 40%;
+  width: 450px;
 }
 
 .deployed-link {
@@ -198,10 +218,11 @@ body {
   text-shadow: 1px 1px 1px white;
 }
 
-/* .github-link {
+.github-link {
   color: black;
   text-shadow: 1px 1px 1px white;
-} */
+}
+
 
 .contact-container {
   display: flex;
@@ -221,6 +242,8 @@ body {
   text-align: center;
   color: black;
   margin: 5%;
+  font-family: 'Kalnia', sans-serif;
+  text-transform: uppercase;
 }
 
 /* p {
@@ -229,18 +252,44 @@ body {
 
 input ,
 textarea {
-  border: 2px solid rgb(235, 229, 229);
-  border-radius: 15px;
+  border: 2px solid rgb(57, 46, 38);
+  border-radius: 400px;
   padding: 10px;
   margin: 10px;
-  background-color: rgb(235, 229, 229);
-  color: black;
+  background-color: rgb(57, 46, 38);
+  color: rgb(251, 249, 249);
+  width: 200px;
 }
 
 .form button {
-  border: 2px solid white;
-  border-radius: 20px;
+  border-radius: 400px;
   margin-top: 5%;
+  font-family: 'Kalnia', sans-serif;
+  text-transform: uppercase;
+}
+
+.form button:hover {
+  background-color: rgb(235, 229, 229);
+  color: black;
+  border-color: #000;
+}
+
+.resume-page {
+  margin: 5%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.resume-page a {
+  color: rgb(234, 222, 234);
+}
+
+.resume-page a:hover {
+  color: rgb(97, 51, 22);
 }
 
 .resume-page {
@@ -250,49 +299,6 @@ textarea {
   font-size: 1.5rem;
 }
 
-.resume-page img{
-  background-color: rgb(177, 175, 165);
-  padding: 5%;
-}
-
-/* .footer {
-  display: flex;
-  position: fixed;
-  bottom: .5%;
-  flex-direction: row;
-  align-items: center;
-} 
-
-
-.footer-item {
-  margin: 20%;
-  justify-content: center;
-}
-
-.footer-link {
-  color: black;
-  text-shadow: 2px 2px 2px white;
-} */
-
-/* .footer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.footer-item {
-  margin: 10px;
-}
-
-.footer-link {
-  color: black;
-  text-shadow: 2px 2px 2px rgb(173, 129, 35);
-} */
 
 @media (max-width: 480px) {
   body {
@@ -323,14 +329,52 @@ textarea {
     height: auto;
     margin-top: 2%; 
   }
+  .resume-page img {
+    width: 50%; 
+    height: auto;
+    margin-top: 2%; 
+  }
+}
 
-  .form input,
-  .form textarea {
-    width: 100%; }
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px; /* Adjust as needed for better readability on small screens */
+  }
 
-  .footer {
-    flex-direction: column; 
-    align-items: center; 
-    padding: 10px; 
+  .main-container {
+    margin: 10px; /* Adjust spacing for better appearance on small screens */
+
+  }
+
+  .content.content-main {
+    margin-left: 0; 
+  }
+
+  .nav-left {
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+    margin-left: 0;
+    padding-left: 3%;
+    position: static; /* Remove fixed positioning on small screens */
+  }
+
+  .left-nav-item {
+    transform: rotate(0deg);
+    padding: 5px;
+  }
+
+  .section-left {
+    height: auto;
+    margin: 50px; 
+  }
+
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
 }

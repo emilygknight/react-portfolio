@@ -24,8 +24,9 @@ function Portfolio() {
   
     return (
       <div className="portfolio-page">
+        <h2>Portfolio/Projects</h2>
         {portfolios.map((portfolio, index) => (
-          <div key={index}>
+          <div key={index} className="project">
             <a href={portfolio.deployedLink}>
             <img src={portfolio.image} alt={portfolio.title} />
             </a>

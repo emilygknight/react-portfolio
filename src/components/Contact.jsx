@@ -52,25 +52,25 @@ const Contact = () => {
       {isSent && <p>Email sent successfully!</p>}
       {error && <p>{error}</p>}
       <form  className="form" onSubmit={handleSubmit}>
-        <input 
+        name:<input 
         type="text" 
         value={name} 
         onChange={handleNameChange} 
         placeholder="Name" 
         required />
-        <input 
+        email:<input 
         type="email" 
         value={email} 
         onChange={handleEmailChange} 
         placeholder="Email" 
         required />
-        <input 
+        subject:<input 
         type="text" 
         value={subject} 
         onChange={handleSubjectChange} 
         placeholder="Subject" 
         required />
-        <textarea 
+        message:<textarea 
         value={message} 
         onChange={handleMessageChange} 
         placeholder="Message" 
