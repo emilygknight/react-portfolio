@@ -20,6 +20,12 @@ function Portfolio() {
         deployedLink: 'https://aqueous-gorge-13031-d60f9d5e4501.herokuapp.com/',
         githubLink: 'https://github.com/emilygknight/note-taker'
     },
+    {
+      image: './images/quotemepic.png',
+      title: 'QuoteMe',
+      deployedLink: 'https://quoteme-1b7p.onrender.com/',
+      githubLink: 'https://github.com/charleshuurman/QuoteMe'
+  },
 ];
   
     return (
