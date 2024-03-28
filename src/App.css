@@ -391,3 +391,8 @@ textarea {
   width: 60%;
   align-items: center;
 }
+
+.aboutme-page p {
+  width: 50%;
+  text-align: center;
+}
