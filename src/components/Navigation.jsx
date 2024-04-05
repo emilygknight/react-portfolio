@@ -30,9 +30,8 @@ function Navigation() {
                     <h1 className="header swipe-up">Emily Knight</h1>
                 <div className="description">
                   <p class="description">Product Designer / Webflow Developer / Framer Developer and Partner.
-                   I am currently a UT Full-Stack Coding Bootcamp student.
-                   I am tramendously eager to learn and get my career started!
-                   I'm super grateful to be a part of the program and I can't wait to get better!</p>
+                   I completed the University of Texas at Austin Full-Stack Coding Bootcamp and earned a Certification.
+                   I am tramendously eager to learn more and get my career started!</p>
                 </div>
             </div>
           </div>
