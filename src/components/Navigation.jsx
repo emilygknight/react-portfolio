@@ -30,9 +30,9 @@ function Navigation() {
               <img className='main-img' src="../images/0F1A9020.jpg"></img>
                     <h1 className="header swipe-up">Emily Knight</h1>
                 <div className="description">
-                  <p class="description">Product Designer / Webflow Developer / Framer Developer and Partner.
-                   I completed the University of Texas at Austin Full-Stack Coding Bootcamp and earned a Certification.
-                   I am tramendously eager to learn more and get my career started!</p>
+                  <p class="description">
+                   I graduated from the University of Texas at Austin Full-Stack Coding Bootcamp and earned a Certification.
+                   I am tramendously passionate about web development and eager to learn more and get my dream career started!</p>
                 </div>
             </div>
           </div>
