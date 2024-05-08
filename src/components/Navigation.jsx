@@ -27,6 +27,7 @@ function Navigation() {
         <div className="wrapper">
           <div className="section-left">
             <div className="content content-main">
+              <img className='main-img' src="../images/0F1A9020.jpg"></img>
                     <h1 className="header swipe-up">Emily Knight</h1>
                 <div className="description">
                   <p class="description">Product Designer / Webflow Developer / Framer Developer and Partner.
