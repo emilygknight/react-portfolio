@@ -17,11 +17,11 @@ function Resume() {
               <p><a href="./pdf/EmilyKnightResume.pdf" download>Download Resume</a></p>
               {/* <img src={myResume.image} alt={myResume.name} /> */}
               <div className="resume-image">
-              <img src="./images/resume1.jpeg" alt={myResume.name} />
-              <img src="./images/resume2.jpeg" alt={myResume.name} />
-              <img src="./images/resume3.jpeg" alt={myResume.name} />
-              <img src="./images/resume4.jpeg" alt={myResume.name} />
-              <img src="./images/resume5.jpeg" alt={myResume.name} />
+              <img src="../images/resume1.jpeg" alt={myResume.name} />
+              <img src="../images/resume2.jpeg" alt={myResume.name} />
+              <img src="../images/resume3.jpeg" alt={myResume.name} />
+              <img src="../images/resume4.jpeg" alt={myResume.name} />
+              <img src="../images/resume5.jpeg" alt={myResume.name} />
               </div>
           </div>
   }

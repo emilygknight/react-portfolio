@@ -13,6 +13,7 @@
 
 ## Installation
 
+- Deployed Link : https://monumental-halva-558ea6.netlify.appLinks to an external site.
 - Access this app by going to this deployed link. 
 - If you'd like to install through github please visit my repository on my github page! 
 

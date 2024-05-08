@@ -1,6 +1,6 @@
 :root {
   --blue: #d8c7ac;
-  --navy: #b4ae9d;
+  --tan: #918d7f;
   --aqua: #c9dee6;
 }
 
@@ -11,16 +11,15 @@ html {
 body {
   min-height: 100%;
   color: #2a2929;
-  background-color: var(--navy);
+  background-color: var(--tan);
   margin: 0;
   font-size: 16px;
   line-height: 20px;
   font-family: "Quicksand" , sans-serif;
-  margin-bottom: 0px;
+  /* background: linear-gradient(var(--tan), #4e4c42); */
 }
 
 .main-container {
-  background-color: var(--navy);
   flex-direction: row;
   margin-top: 15px;
   position: relative;
@@ -149,7 +148,7 @@ body {
   padding-right: 5%;
   display: inline-block;
   position: relative;
-}   
+}
 
 .nav-link {
   transition: transform 0.3s ease-in-out;
@@ -157,7 +156,7 @@ body {
 
 .nav-link:hover {
   transform: skewX(20deg);
-  color: #6a8778; 
+  color: #597064; 
 }
 
 
@@ -227,7 +226,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   color: black;
 }
 
@@ -248,10 +246,10 @@ body {
 input ,
 textarea {
   border: 2px solid rgb(57, 46, 38);
-  border-radius: 400px;
+  /* border-radius: 400px; */
   padding: 10px;
   margin: 10px;
-  background-color: rgb(57, 46, 38);
+  background-color: rgb(79, 69, 62);
   color: rgb(251, 249, 249);
   width: 200px;
 }
@@ -259,8 +257,9 @@ textarea {
 .form button {
   border-radius: 400px;
   margin-top: 5%;
-  font-family: 'Kalnia', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
+  margin: 4%;
 }
 
 .form button:hover {

@@ -4,7 +4,7 @@
 const aboutMe = {
   name: "Emily Knight",
   description: "Dynamic Full-Stack Web Developer with a customer service background and University of Texas at Austin Full Stack Developer Bootcamp certification. Passionate about crafting innovative applications for the future. Expert problem-solver with strong organizational and teamwork skills, adept at driving projects from concept to completion. Proven track record of delivering high-quality projects on time and within budget, with a focus on staying updated on emerging technologies and trends.",
-  image: './images/0F1A9020.jpg'
+  image: '../images/0F1A9020.jpg'
 }
 
 function About() {
