@@ -162,8 +162,8 @@ body {
 
 
 .aboutme-page img {
-  border-radius: 50%;
-  width: 200px;
+  /* border-radius: 50%; */
+  width: 240px;
   height: 200px;
   margin: 5%;
   transition: transform 0.3s ease;
@@ -202,25 +202,27 @@ body {
   width: 400px;
   margin-top: 5%;
   border-radius: 5%;
+  box-shadow: 10px 0px 40px #1c1e23;
 }
 
 .portfolio-page p {
-  margin: 5%;
+  margin: 1%;
   font-size: .8rem;
 }
 
-.portfolio-page img:hover {
+
+/* .portfolio-page img:hover {
   width: 450px;
-}
+} */
 
 .deployed-link {
   color: black;
-  text-shadow: 1px 1px 1px white;
+  /* text-shadow: 1px 1px 1px white; */
 }
 
 .github-link {
   color: black;
-  text-shadow: 1px 1px 1px white;
+  /* text-shadow: 1px 1px 1px white; */
 }
 
 .contact-container {
@@ -246,11 +248,11 @@ body {
 
 input ,
 textarea {
-  border: 2px solid rgb(57, 46, 38);
+  border: 0px solid rgb(57, 46, 38);
   /* border-radius: 400px; */
   padding: 10px;
   margin: 10px;
-  background-color: rgb(79, 69, 62);
+  background-color: rgb(55, 55, 67);
   color: rgb(251, 249, 249);
   width: 200px;
 }
@@ -322,6 +324,7 @@ textarea {
     height: auto;
     margin-top: 2%; 
   }
+
 
 
   .resume-image {
