@@ -110,12 +110,28 @@ import Contact from './Contact';
 import Resume from './Resume';
 
 
-function scrollToBottom() {
+// function scrollToBottom() {
+//   window.scrollTo({
+//     top: document.documentElement.scrollHeight, // Scroll to the bottom of the page
+//     behavior: 'smooth', // Smooth scrolling animation
+//   });
+// }
+
+function scrollToTop() {
   window.scrollTo({
-    top: document.documentElement.scrollHeight, // Scroll to the bottom of the page
+    top: 600, // Scroll to the top of the page
     behavior: 'smooth', // Smooth scrolling animation
   });
 }
+
+// function scrollToTop(sectionId) {
+//   const section = document.getElementById(sectionId);
+//   if (section) {
+//     section.scrollIntoView({
+//       behavior: 'smooth', // Smooth scrolling animation
+//     });
+//   }
+// }
 
 
 function Navigation() {
@@ -149,22 +165,22 @@ function Navigation() {
           <div className="section-right">
             <ul className='nav'>
               <li className='nav-item'>
-                <Link to='/about' className='nav-link' onClick={scrollToBottom}>
+                <Link to='/about' className='nav-link' onClick={scrollToTop}>
                   About
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/portfolio' className='nav-link' onClick={scrollToBottom}>
+                <Link to='/portfolio' className='nav-link' onClick={scrollToTop}>
                   Portfolio
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/contact' className='nav-link' onClick={scrollToBottom}>
+                <Link to='/contact' className='nav-link' onClick={scrollToTop}>
                   Contact
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/resume' className='nav-link' onClick={scrollToBottom}>
+                <Link to='/resume' className='nav-link' onClick={scrollToTop}>
                   Resume
                 </Link>
               </li>
